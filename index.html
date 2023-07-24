@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <header class="sticky-top">
             <div class="navbar bg-body navbar-expand">
-                <div class="navbar-brand">It's Your Library <i class="fas fa-building"></i></div>
+                <div class="navbar-brand">It's Your Library <i class="fas fa-books"></i></div>
                 <div class="flex-fill"></div>
                 <div id="searchbar" class="input-group">
                     <input type="text" class="rounded-start-4 rounded-end-0 form-control" placeholder="Search Books/AuthorName/Catagories" id="searchedItem">
@@ -68,7 +68,7 @@
             </div>
         </header>
         <section class=" mt-2" id="home">
-            <div class="card  w3-gray " id="booksOfTheDay">
+            <div class="card   " id="booksOfTheDay">
                 <div class="card-header">Books Of The Day</div>
                 <div class="card-body row d-flex flex-row overflow-auto flex-wrap " style="width:100%; height:450px;">
                 <div class="col-3 m-1 col-sm-12 card " id="" style="width:300px; height:400px;">
@@ -141,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w3-gray  mt-3" id="Nobels">
+            <div class="card mt-3" id="Nobels">
                 <div class="card-header">Nobels</div>
                 <div class="card-body row d-flex flex-ro overflow-auto flex-wrap" style="width:100%; height:450px;">
                 <div class="col-3 col-lg-12 card m-1" id="" style="width:300px; height:400px;">
@@ -214,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card  w3-gray mt-3" id="Poems">
+            <div class="card  mt-3" id="Poems">
                 <div class="card-header">Poems</div>
                 <div class="card-body row d-flex flex-ro overflow-auto flex-wrap" style="width:100%; height:450px;">
                 <div class="col-3 col-lg-12 card m-1" id="" style="width:300px; height:400px;">
@@ -293,7 +293,23 @@
                 <h3>Contacts</h3>
                 <a  class="btn btn-close" data-bs-dismiss="offcanvas"></a>
             </div>
-            <div class="offcanvas-body"></div>
+            <div class="offcanvas-body">
+                <div id="contactForm">
+                    <div class="mt-2 mb-2 form-floating">
+                        <input type="text" placeholder="Enter Your Name" name="name" class="form-control" id="name">
+                        <label for="name" >Enter Your Name</label>
+                    </div>
+                    <div class="mt-2 mb-2 form-floating ">
+                        <input type="email" placeholder="Enter Your Email" name="email" class="form-control" id="email">
+                        <label for="email" >Enter Your Email</label>
+                    </div>
+                    <div class="mt-2 mb-2 ">
+                        <label for="messages" class="form-label">Enter Message</label>
+                        <textarea name="message" placeholder="" class="form-control" id="messages" rows="5" ></textarea>
+                    </div>
+                    <button type="button" class="btn mt-2 mb-2 btn-primary">Send <i class="fas fa-paper-plane-top"></i></button>
+                </div>
+            </div>
             <div class="offccanvas-bottom"></div>
         </div>
     </div>
